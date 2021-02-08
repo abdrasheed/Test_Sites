@@ -1,6 +1,6 @@
 :root{
-  --primary-color: #28648a;
-  --secondary-color: #28648a;
+  --primary-color: #2c6e97;
+  --secondary-color: #2c6e97;
   --light-color: #eff4f5;
   --item-out-color: #ff7350;
 }
@@ -75,7 +75,7 @@ body{
   background-color: green;
 }
 .header-logo {
-  background-image: linear-gradient(to right,var(--secondary-color),var(--item-out-color));
+  background-color: var(--secondary-color);
   color: var(--light-color);
 }
 .logo img{
@@ -246,12 +246,9 @@ nav {
   }
   .header-info {
     padding: 0;
-    padding-top: 20px;
+    padding-top: 10px;
     flex-direction: column;
     text-align: center;
-  }
-  .header-info .logo {
-    margin-bottom: 10px;
   }
   .search-form {
     margin: 10px 0 30px 0;
@@ -310,7 +307,7 @@ nav {
     color: #228dca;
   }
   #check:checked ~ ul {
-    top: 250px;
+    top: 227px;
   }
 }
 
