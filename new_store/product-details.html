@@ -1,0 +1,292 @@
+<!doctype html>
+<html lang = "en">
+<head>
+<meta charset = "UTF-8">
+     <meta name = "viewport"
+           content = "width=device-width, initial-scale=1">
+     <meta http-equiv = "X-UA-Compatible" content = "ie=edge">
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="product_css/style.css">
+
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.7.2/css/all.css"
+      integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr"
+      crossorigin="anonymous"
+    />
+     <link rel="preconnect" href="https://fonts.gstatic.com">
+     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@200&display=swap" rel="stylesheet">
+     <title>oxygen</title>
+</head>
+<body>
+     <!-- Header -->
+     <header>
+        <div class="header-logo">
+          <div class="container ">
+            <div class="header-info">
+              <div class="logo">
+                <img src="photos/one.png">
+              </div>
+              <div class="serch">
+                <div class="dropdown city-dropdown">
+                  <button class="btn btn-secondary dropdown-toggle cities" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    المدينة
+                  </button>
+                  <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                    <a class="dropdown-item city_item" data-city="الرياض" href="#"><img src="photos/city.jpg" width="50"> المدينة الرياض </a>
+                    <a class="dropdown-item city_item" data-city="جدة" href="#"><img src="photos/city.jpg" width="50"> المدينة جدة </a>
+                    <a class="dropdown-item city_item" data-city="الرحاب" href="#"><img src="photos/city.jpg" width="50">المدينة الرحاب </a>
+                  </div>
+                </div>
+                <div class="search-form">
+                  <form>
+                    <input type="hidden" value="" id="city_value" name="city">
+                    <input type="search" placeholder="إبحث">
+                    <button type="submit" class="search-btn"><i class="fa fa-search"></i> </button>
+                  </form>
+                </div>
+              </div>
+              
+            </div>
+          </div>
+        </div>
+     </header>
+     <!--END HEADER-->
+
+     <!--START NAV BAR -->
+     <nav class="navbar navbar-expand-lg navbar-light">
+       <div class="container">
+        <a href="#" class="cart">
+            <i class="fas fa-shopping-cart my-cart">
+                <span class="counter">1</span>
+            </i>
+        </a>
+        <a href="#" class="whatsapp_link">
+          <i class="fab fa-whatsapp"></i>
+      </a>
+        <!-- when user is out -->
+        <!-- <div class="dropdown">
+            <button class="btn btn-secondary dropdown-toggle sign-in" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              تسجيل الدخول أو الإشتراك
+            </button>
+            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+              <a class="dropdown-item" href="#">الإشتراك<i class="fas fa-user-plus"></i></a>
+              <a class="dropdown-item" href="#">تسجيل الدخول <i class="fas fa-sign-in-alt"></i></a>
+            </div>
+        </div> -->
+        <div class="dropdown">
+            <button class="btn btn-secondary dropdown-toggle sign-in" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              مرحبا محمد الخالدي
+            </button>
+            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+              <a class="dropdown-item" href="#">بياناتي<i class="fas fa-user"></i></i></a>
+              <a class="dropdown-item" href="#">طلباتي<i class="far fa-list-alt"></i></a>
+              <a class="dropdown-item" href="#">تسجيل الخروج <i class="fas fa-sign-out-alt"></i></a>
+            </div>
+        </div>
+         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#main-nav" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+           <span class="navbar-toggler-icon"></span>
+         </button>
+         <div class="collapse navbar-collapse" id="main-nav">
+           <ul class="navbar-nav ml-auto mb-2 mb-lg-0">
+             <li class="nav-item">
+               <a class="nav-link" href="#">الغسالات</a>
+             </li>
+             <li class="nav-item">
+               <a class="nav-link active" aria-current="page" href="#overview">المكيفات</a>
+             </li>
+             <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  تبريد
+                </a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <a class="dropdown-item" href="#">مكيفات</a>
+                  <a class="dropdown-item" href="#">مبردات</a>
+                </div>
+              </li>
+             <li class="nav-item">
+               <a class="nav-link" href="#works">الأجهزة الكهربائية</a>
+             </li>
+             <li class="nav-item">
+               <a class="nav-link" href="#blog">الكاويات</a>
+             </li>
+             <li class="nav-item">
+               <a class="nav-link" href="#footer">الثلاجات</a>
+             </li>
+           </ul>
+         </div>
+       </div>
+     </nav>
+     <!--END NAV BAR -->
+     
+     <!--START CATEGOTY -->
+     <div class="category">
+        <div class="container">
+          <p>
+            <span class="category_old">الصفحة الرئيسية</span>
+            <span class="next"> / </span>
+            <span class="category_old">الغسالات</span>
+            <span class="next"> / </span> 
+            <span class="category_now">غسالة توماتيك</span>
+          </p>
+        </div>
+     </div>
+     
+     <!--END CATEGOTY -->
+     <!--START PRODUCT DETAILS -->
+     <div class="row products-det container">
+        <div class="col-md-12 col-lg-6 col-xl-6">
+            <div class="gallary">
+              <div class="master-image">
+                  <img class="selected" src="photos/product1.jpg" />
+              </div>
+              <div class="thumbnails">
+                  <img class="selected" src="photos/product1.jpg" />
+                  <img src="photos/f14bf251-3082-4492-b696-3edeb071aea2.jpg" />
+                  <img src="photos/product3.jpg" />
+                  <img src="photos/a42969ee-07fc-4c51-a03b-a8967f4fc9c8.jpg" />
+              </div>
+          </div>
+        </div>
+        <div class="col-md-12 col-lg-6 col-xl-6">
+            <div class="details-single-product">
+                <h5 class="title-single-product">
+                  غسالة يوجين أوتوماتيك فتحة أمامية 10كغ استيل تجفيف 100%
+                </h5>
+                <p class="sale-single-product">
+                  <span class="old_price">5500 ر.س</span>
+                  <span class="sale">خصم 10%</span>
+                </p>
+                <h4 class="price-single-product">
+                  <span class="general-price">5500 ر.س</span>
+                </h4>
+                <p class="extra-tax">>> يتضمن ضريبة القيمة المضافة </p>
+            </div>
+            <div class="shipping">
+              <p class="counting">
+                <span class="add"><i class="fas fa-plus-square"></i></span>
+                <span class="number-counter">1</span>
+                <span class="minus"><i class="fas fa-minus-square"></i></span>
+              </p>
+              <form>
+                <input type="hidden" name="count" value="">
+                <button type="submit" class="count">  إضافة إلى عربة التسوق</button>
+              </form>
+            </div>
+            <div class="feater-product">
+              <div class="feater">
+                <p class="">
+                  <span class="type">نوع التشغيل</span>
+                  <span class="Arrow">>></span>
+                  <span class="value">اوتوماتيك</span>
+                </p>
+              </div>
+              <div class="feater">
+                <p class="">
+                  <span class="type">السعة (KG)</span>
+                  <span class="Arrow">>></span>
+                  <span class="value">10 كغ </span>
+                </p>
+              </div>
+              <div class="feater">
+                <p class="">
+                  <span class="type">اللون</span>
+                  <span class="Arrow">>></span>
+                  <span class="value">فضي</span>
+                </p>
+              </div>
+              <div class="feater">
+                <p class="">
+                  <span class="type">التردد</span>
+                  <span class="Arrow">>></span>
+                  <span class="value">	220 فولت</span>
+                </p>
+              </div>
+              <div class="feater">
+                <p class="">
+                  <span class="type">الضمان</span>
+                  <span class="Arrow">>></span>
+                  <span class="value">سنتين شامل</span>
+                </p>
+              </div>
+              <div class="feater">
+                <p class="">
+                  <span class="type">رقم الموديل</span>
+                  <span class="Arrow">>></span>
+                  <span class="value">UWMC10  </span>
+                </p>
+              </div>
+              <div class="feater">
+                <p class="">
+                  <span class="type">الابعاد </span>
+                  <span class="Arrow">>></span>
+                  <span class="value">عرض: 60 سم / عمق: 60 سم / ارتفاع: 85 سم  </span>
+                </p>
+              </div>
+            </div>
+      </div>
+     </div>
+     <!--END PRODUCT DETAILS -->
+
+
+
+     <!--START FOOTER-->
+     <div class = "footer" id="footer">
+         <div class = "container">
+            <div class = "row">
+                <div class="col-sm-12 col-lg-6">
+                    <div class="site-info text-right">
+                        <h1>O<span class="logo-srec">X</span>YGEN</h1>
+                        <p>
+                          نحن في شركة اكسجين للأجهزة الكهربائية نتشرف في تقديم احدث 
+               تقنيات اجهزة التبريد والتكييف والاجهزة الكهربائية ونحن دائما جاهزون لخدمتكم ولتقديم الدعم الفني.
+
+                         </p>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-lg-3">
+                    <div class="helpful-links text-right">
+                        <h3>سهولة الوصول</h3>
+                        <div class="row">
+                            <div class="col text-right">
+                                <ul class="list-unstyled">
+                                    <li><a href="#"><i class="fa fa-angle-left"></i>المكيفات</a></li>
+                                    <li><a href="#"><i class="fa fa-angle-left"></i>أفران</a></li>
+                                    <li><a href="#"><i class="fa fa-angle-left"></i>شاشات</a></li>
+                                    <li><a href="#"><i class="fa fa-angle-left"></i>الثلاجات</a></li>
+                                    <li><a href="#"><i class="fa fa-angle-left"></i>مجفف</a></li>
+                                </ul>
+                            </div>
+                            <div class="col">
+                                <ul class="list-unstyled">
+                                  <li><a href="#"><i class="fa fa-angle-left"></i>ميكرويفات</a></li>
+                                  <li><a href="#"><i class="fa fa-angle-left"></i>برادات</a></li>
+                                  <li><a href="#"><i class="fa fa-angle-left"></i>فريزرات</a></li>
+                                  <li><a href="#"><i class="fa fa-angle-left"></i>كاويات</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-lg-3">
+                    <div class="contact text-right">
+                        <h3>تواصل معنا</h3>
+                        <p>فرع الرياض - العارض </p>
+                        <p>هاتف : +555555555555</p>
+                        <p>إيميل : <a href="">info@oxygen.com</a></p>
+                    </div>
+                </div>
+            </div>
+         </div>
+     </div>
+     <!--END FOOTER-->
+
+     <script src="js/jquery-3.5.1.js"></script>
+     <script src="js/main.js"></script>
+</body>
+</html>

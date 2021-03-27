@@ -1,0 +1,202 @@
+@import url('https://fonts.googleapis.com/css2?family=Cairo&display=swap');
+:root {
+	--primary-color: #264f73; /* First color: #08526d */
+	--secondary-color: #ff7350; /* second color: #ec1c23 */
+	--pargraph-color: #919191;
+	--background-color:  #faf9f9;
+}
+::selection {
+  color: var(--primary-color);
+  background: var(--secondary-color);
+}
+
+html,  body {
+    padding: 0;
+    margin: 0;
+    direction: rtl;
+    height: 100%;
+	box-sizing: border-box;
+    font-family: 'Cairo', sans-serif;
+}
+
+/*gallary*/
+.products-det {
+    text-align: right;
+    margin: auto;
+    margin-top:50px;
+    margin-bottom:50px;
+}
+.gallary {
+    width: 100%;
+    margin: auto;
+  }
+
+  .gallary  img {
+    width: 100%;
+    -webkit-transition:all .5s ease-in-out;
+    -moz-transition: all .5s ease-in-out;
+    -o-transition: all .5s ease-in-out;
+    transition: all .5s ease-in-out;
+    opacity: .7;
+  }
+  .gallary .master-image img{
+      height: 100%;
+  }
+  .gallary .thumbnails {
+    margin-top: 15px;
+    display: grid;
+    grid-template-columns: 22% 22% 22% 22%;
+    grid-gap: 20px;
+  }
+  .gallary .thumbnails img{
+    border: 5px solid var(--primary-color);
+    height: 100px;
+    cursor: pointer;
+  }
+  .gallary  img.selected{
+    opacity: 1;
+    border: 5px solid var(--secondary-color );
+  }
+
+  .details-single-product .title-single-product {
+      letter-spacing: -1px;
+      font-weight: bold;
+      line-height: 1.5;
+      word-spacing: 3px;
+      color: var(--primary-color);
+  }
+  .details-single-product .sale-single-product{
+      margin:20px 0!important;
+  }
+  .details-single-product .sale-single-product .old_price {
+    text-decoration: line-through;
+}
+.details-single-product .sale-single-product .sale{
+    font-size: 15px;
+}
+.details-single-product .price-single-product .general-price{
+    font-weight: bold;
+    color: var(--primary-color);
+}
+.details-single-product .extra-tax{
+    margin:10px 0!important;
+    color: var(--secondary-color);
+}
+.shipping .counting{
+    margin:10px 0!important;
+    display: block;
+    width: 100px;
+    height: 24px;
+    display: flex;
+    justify-content: space-between;
+}
+.shipping .counting i{
+    cursor: pointer;
+    font-size: 25px;
+    color: var(--secondary-color);
+}
+.shipping .counting i:hover {
+    color: var(--primary-color);
+}
+.shipping .counting .number-counter{
+    padding:0 10px ;
+    border: 1px solid var(--primary-color);
+    border-radius: 5px;
+}
+
+
+.shipping .count {
+	font-family: 'Cairo', sans-serif!important;
+	background: var(--primary-color);
+	padding: 5px 0;	
+	width: 200px;
+	transition: 0.5s;
+	border-top-left-radius: 5px;
+	border-bottom-right-radius: 5px;
+	border: none;
+	margin: 6px 0 10px 0px;
+	cursor: pointer;
+	color: #fff;
+	font-weight: 500;
+	font-size: 15px;
+}
+.shipping .count:hover {
+    background-color: var(--secondary-color);
+}
+.feater-product .feater {
+    border-bottom: 1px solid var(--pargraph-color);
+}
+.feater-product .feater p{
+    padding: 5px 0;
+}
+.feater-product .feater p .type{
+    font-weight: bold;
+    color: var(--primary-color);
+}
+.feater-product .feater p .Arrow{
+    color: var(--secondary-color);
+    margin: 0 10px;
+    font-weight: bold;
+}
+.feater-product .feater p .Arrow{
+    color: var(--secondary-color);
+    margin: 0 10px;
+    font-weight: bold;
+}
+@media (max-width: 1200px) {
+    .gallary .thumbnails img {
+        height: 100px;
+    }
+    .gallary .thumbnails {
+        margin-top: 17px;
+        grid-gap: 17px;
+    }
+}
+@media (max-width: 992px) {
+    .details-single-product {
+        margin-top: 40px;
+    }
+    .gallary .thumbnails img {
+        height: 120px;
+    }
+    .gallary .thumbnails {
+        margin-top: 27px;
+        grid-gap: 27px;
+    }
+}
+@media (max-width: 768px) {
+    .gallary .thumbnails img {
+        height: 100px;
+    }
+    .gallary .thumbnails {
+        margin-top: 27px;
+        grid-gap: 27px;
+    }
+}
+@media (max-width: 600px) and (min-width:400px){
+    .gallary .thumbnails img {
+        height: 70px;
+    }
+    .gallary .thumbnails {
+        margin-top: 15px;
+        grid-gap: 15px;
+    }
+}
+@media (max-width: 400px) and (min-width:300px){
+    .gallary .thumbnails img {
+        height: 60px;
+    }
+    .gallary .thumbnails {
+        margin-top: 13px;
+        grid-gap: 13px;
+    }
+}
+@media (max-width: 300px) and (min-width:200px){
+    .gallary .thumbnails img {
+        height: 60px;
+    }
+    .gallary .thumbnails {
+        margin-top: 10px;
+        grid-gap: 10px;
+    }
+}
