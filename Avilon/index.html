@@ -5,13 +5,14 @@
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
 
-  <title>Avilon Bootstrap Template</title>
+  <title>دبلة نصفك الثاني</title>
   <meta content="" name="description">
   <meta content="" name="keywords">
 
   <!-- Favicons -->
   <link href="assets/img/logo.png" rel="icon">
   <link href="assets/img/logo.png" rel="apple-touch-icon">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
   <!-- Google Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -42,7 +43,7 @@
 
       <div id="logo">
         <h1><a href="index.html">
-          <img src="assets\img\whitelogo.png" width="100">
+          <img src="assets\img\logo.png" width="100">
         </a></h1>
         <!-- Uncomment below if you prefer to use an image logo -->
         <!-- <a href="index.html"><img src="assets/img/logo.png" alt=""></a> -->
@@ -52,8 +53,6 @@
         <ul>
           <li><a class="nav-link scrollto active" href="#hero">الرئيسية</a></li>
           <li><a class="nav-link scrollto" href="#about">من نحن</a></li>
-          <li><a class="nav-link scrollto" href="#features">مميزات دبلة</a></li>
-          <li><a class="nav-link scrollto" href="#how_it_works">ألية عمل دبلة</a></li>
           <li><a class="nav-link scrollto" href="#way">طريقة عمل دبلة</a></li>
           <li><a class="nav-link scrollto" href="#contact">تواصل معنا</a></li>
         </ul>
@@ -66,20 +65,33 @@
   <section id="hero">
 
     <div class="hero-text" data-aos="zoom-out">
-      <h2>ما هو دبلة؟</h2>
+      <h2>دبلة</h2>
+      <span style="color: #8b7ff5; font-weight: 500;font-size: 20px;padding: 0 0 15px 0;">#دبلة_نصفك_الثاني</span>
+
       <p>أول تطبيق في المملكة العربية السعودية يقدم طريقة صحية وموثوقة للحصول على شريك الحياة المناسب
         <br>
         
       </p>
-      <span style="color: black; font-weight: 600;font-size: 20px;padding: 0 0 15px 0;">#دبلة_نصفك_الثاني</span>
-      <a href="https://play.google.com/store/apps/details?id=com.app.user.deblah" 
-      class="btn-get-started scrollto"> تحميل تطبيق الأندرويد</a>
-      <a href="https://apps.apple.com/sa/app/deblah/id1448724783"
-       class="btn-get-started scrollto">تحميل تطبيق الأيفون</a>
-
+      <div class="call_div">
+        <a href="https://play.google.com/store/apps/details?id=com.app.user.deblah" 
+        class="btn-get-started scrollto android">
+         تحميل تطبيق الأندرويد
+         <i class="fa fa-android"></i>
+        </a>
+  
+        <a href="https://apps.apple.com/sa/app/deblah/id1448724783"
+         class="btn-get-started scrollto apple">تحميل تطبيق الأيفون
+         <i class="fa fa-apple"></i>
+        </a>
+      </div>
+      <div class="video">
+        <video width="90%" controls>
+          <source src="assets/img/Video (1).mov" type="video/mp4">
+        </video>
     </div>
-
-    <div class="product-screens">
+    </div>
+ 
+    <!-- <div class="product-screens">
 
       <div class="product-screen-1" data-aos="fade-up" data-aos-delay="400">
         <img src="assets/img/product-screen-3.jpg" alt="">
@@ -93,14 +105,74 @@
         <img src="assets/img/product-screen-1.jpg" alt="">
       </div>
 
-    </div>
+    </div> -->
 
   </section><!-- End Hero Section -->
 
   <main id="main">
+    <section id="features">
+      <div class="container aos-init aos-animate" data-aos="fade-up">
 
+        <div class="row">
+
+          <div class="col-lg-8 offset-lg-4">
+            <div class="section-header">
+              <h3 class="section-title">من نحن</h3>
+              <span class="section-divider"></span>
+            </div>
+          </div>
+          <div class="col-lg-8 col-md-7 ">
+            
+            <div class="row">
+              <div class="col-lg-6 col-md-6 box aos-init aos-animate" data-aos="fade-up">
+                <div class="icon"><i class="bi bi-briefcase"></i></div>
+                <h4 class="title">ماهو تطبيق دبلة؟</h4>
+                <p class="description">
+                  
+                 تطبيق دبلة هو تطبيق يساعد على الزواج و يهدف الى لقاء شريك حياتك المحتمل 
+                 عن طريق تطابق رغباتكم وشخصياتكم بنسبة ٦٥٪  فأكثر.  
+                 التطبيق صمم لإيجاد شريك الحياة المناسب بأسرع طريقة واكثرها فعالية وكفاءة.
+
+                </p>
+              </div>
+              <div class="col-lg-6 col-md-6 box aos-init aos-animate" data-aos="fade-up">
+                <div class="icon"><i class="bi bi-card-checklist"></i></div>
+                <h4 class="title">ماذا تمتاز به دبلة؟</h4>
+                <p class="description">
+                  يمتاز دبلة عن غيره من تطبيقات الزواج بأنه يساعدك بالوصول اإلى شريك حياتك المحتمل بنسبة عالية عن طريق ملء بياناتك الأساسية ورغباتك وإجابة أسئلة اجتماعية و نفسية أنشئت تحت ايدي اخصائيين بهذا المجال تم دراستها بكل دقة مع الاخذ بعين الاعتبار معايير مجتمعنا المحافظ
+
+                </p>
+              </div>
+              <div class="col-lg-6 col-md-6 box aos-init aos-animate" data-aos="fade-up" dat-aos-delay="100">
+                <div class="icon"><i class="bi bi-binoculars"></i></div>
+                <h4 class="title">ألية عمل دبلة</h4>
+                <p class="description">
+                  - يعمل على النقاط ( النقاط هي عدد الإعجابات او ال Likes التي يمكن إرسالها للمستخدمين الذين ترغبون بالتواصل معهم) وكبداية دبلة ستمنحك نقطتين مجانية وبعد ذلك سيتوجب عليك شراء النقاط من التطبيق.  
+                </p>
+              </div>
+              <div class="col-lg-6 col-md-6 box aos-init aos-animate" data-aos="fade-up" data-aos-delay="100">
+                <div class="icon"><i class="bi bi-brightness-high"></i></div>
+                <h4 class="title">مهمة دبلة</h4>
+                <p class="description">
+                تقديم بيءة صحية وأمنة للإلتقاء بشريك حياة مناسب<br>الحفاظ على السرية والخصوصية  
+                </p>
+              </div>
+            </div>
+
+          </div>
+          <div class="col-lg-4 col-md-5 features-img">
+            <img src="assets/img/product-screen-3.jpg" alt="" data-aos="fade-right" class="aos-init aos-animate">
+          </div>
+
+          
+
+        </div>
+
+      </div>
+
+    </section>
     <!-- ======= About Section ======= -->
-    <section id="about" class="section-bg">
+    <!-- <section id="about" class="section-bg">
       <div class="container-fluid" data-aos="fade-up">
         <div class="section-header">
           <h3 class="section-title">ماهو تطبيق دبلة؟</h3>
@@ -127,10 +199,12 @@
         </div>
 
       </div>
-    </section><!-- End About Section -->
+    </section>
+     -->
+    <!-- End About Section -->
 
      <!-- ======= Featuress Section ======= -->
-     <span id='features'></span>
+     <!-- <span id='features'></span>
      <section id="about" class="section-bg about2">
       <div class="container-fluid" data-aos="fade-up">
         <div class="section-header">
@@ -155,11 +229,11 @@
         </div>
 
       </div>
-    </section>
+    </section> -->
     <!-- End Featuress Section -->
 
     <!-- ======= how it works Section ======= -->
-    <span id="how_it_works"></span>
+    <!-- <span id="how_it_works"></span>
     <section id="about" class="section-bg">
       <div class="container-fluid" data-aos="fade-up">
         <div class="section-header">
@@ -185,7 +259,7 @@
         </div>
 
       </div>
-    </section>
+    </section> -->
     <!-- how it works Section -->
 
     <!-- ======= way Section ======= -->
@@ -211,14 +285,21 @@
     <section id="call-to-action">
       <div class="container">
         <div class="row">
-          <div class="col-lg-9 text-lg-center">
+          <div class="col-lg-9 text-lg-center aline-items-center center_call">
+            <img src="assets\img\logo.png" width="100">
             <h1 class="cta-title">#دبلة_نصفك_الثاني</h1>
           </div>
-          <div class="col-lg-3 cta-btn-container text-center">
-            <a href="https://play.google.com/store/apps/details?id=com.app.user.deblah" 
-              class="cta-btn align-middle"> تحميل تطبيق الأندرويد</a>
-            <a href="https://apps.apple.com/sa/app/deblah/id1448724783"
-              class="cta-btn align-middle">تحميل تطبيق الأيفون</a>
+          <div class="col-lg-3 cta-btn-container text-center call_dow">
+                  <a href="https://play.google.com/store/apps/details?id=com.app.user.deblah" 
+              class="btn-get-started scrollto android">
+              تحميل تطبيق الأندرويد
+              <i class="fa fa-android"></i>
+              </a>
+              <br>
+              <a href="https://apps.apple.com/sa/app/deblah/id1448724783"
+              class="btn-get-started scrollto apple">تحميل تطبيق الأيفون
+              <i class="fa fa-apple"></i>
+              </a>
             
           </div>
           
@@ -250,7 +331,7 @@
             <div class="info">
               <div>
                 <i class="bi bi-geo-alt"></i>
-                <p>Saudi Arabia, Jeddah</p>
+                <p>Saudi Arabia, Riyadh</p>
                 
               </div>
 
